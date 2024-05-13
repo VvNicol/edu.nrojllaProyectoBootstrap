@@ -2,10 +2,14 @@
 <html>
 
 <head>
+
 	<meta charset="UTF-8">
-	<meta name="nrojlla" content="paginaTienda">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="boobtstrap">
+	<meta name="description" content="Bootstrap">
+	<meta name="keywords" content="paginaTienda, arte, bootstrap">
+	<meta name="author" content="nrojlla">
+
+
 	<link href="custom.css" rel="stylesheet">
 	<title>Mi Arte</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,56 +18,50 @@
 
 <body>
 
-	<main class="container-fluid text-center">
+	<div class="container-fluid">
 
+		<div class="row flex-nowrap fixed-top">
 
-		<div class="container-fluid">
+			<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 navegador fixed-top">
 
-			<div class="row flex-nowrap">
-
-				<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 navegador">
-
-					<div
-						class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-						<a href="index.html"
-							class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-							<span class="fs-5 d-none d-sm-inline">Mi tienda</span>
+				<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+					<a href="index.html"
+						class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+						<span class="fs-5 d-none d-sm-inline">Mi tienda</span>
+					</a>
+					<div class="pb-4">
+						<a href="inicio.html" class="d-flex align-items-center">
+							<img src="img/icon.png" alt="hugenerd" width="50" height="50" class="icono">
 						</a>
-						<div class="pb-4">
-							<a href="inicio.html" class="d-flex align-items-center">
-								<img src="img/icon.png" alt="hugenerd" width="50" height="50" class="icono">
-							</a>
-						</div>
-						<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-							id="menu">
-							<li class="nav-item">
-								<a class="nav-link" href="index.html">Inicio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="compra.html">Compra</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="tienda.html">Tienda</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-									aria-expanded="false">
-									Porfolio
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">Dibujos</a></li>
-									<li><a class="dropdown-item" href="#">Animaciones</a></li>
-									<li><a class="dropdown-item" href="#">3D</a></li>
-								</ul>
-							</li>
-
-						</ul>
-						<hr>
-
 					</div>
-				</div>
-				<div class="col py-3">
+					<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+						id="menu">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="compra.html">Compra</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tienda.html">Tienda</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Porfolio
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Dibujos</a></li>
+								<li><a class="dropdown-item" href="#">Animaciones</a></li>
+								<li><a class="dropdown-item" href="#">3D</a></li>
+							</ul>
+						</li>
 
+					</ul>
+				</div>
+			</div>
+			<main class="container-fluid text-center">
+				<div class="col py-3">
 
 					<div class="card">
 						<div class="card-header">
@@ -153,7 +151,7 @@
 											</svg>
 										</td>
 									</tr>
-									
+
 									<thead>
 										<tr>
 											<th scope="col">#</th>
@@ -237,8 +235,8 @@
 						</div>
 					</footer>
 				</div>
-			</div>
 		</div>
+	</div>
 	</main>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
